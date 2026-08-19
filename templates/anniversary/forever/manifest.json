@@ -1,0 +1,38 @@
+{
+  "id": "love-story",
+  "name": "Love Story",
+  "category": "anniversary",
+  "description": "Perjalanan hubungan dalam satu halaman.",
+  "fields": [
+    {
+      "id": "judul",
+      "label": "Judul website",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "nama",
+      "label": "Nama penerima",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "pesan",
+      "label": "Pesan utama",
+      "type": "textarea",
+      "required": true
+    },
+    {
+      "id": "gallery",
+      "label": "Foto",
+      "type": "photos",
+      "required": false
+    },
+    {
+      "id": "music",
+      "label": "Musik",
+      "type": "audio",
+      "required": false
+    }
+  ]
+}

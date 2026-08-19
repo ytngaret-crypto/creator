@@ -37,10 +37,6 @@ def init_db():
             sent INTEGER NOT NULL DEFAULT 0,
             failed INTEGER NOT NULL DEFAULT 0,
             created_at TEXT NOT NULL)''')
-        c.execute('''CREATE TABLE IF NOT EXISTS wizard_sessions(
-            telegram_id INTEGER PRIMARY KEY,
-            payload_json TEXT NOT NULL,
-            updated_at TEXT NOT NULL)''')
 
 def upsert_user(user):
     with conn() as c:
@@ -93,27 +89,3 @@ def add_broadcast(admin_id,text):
 
 def finish_broadcast(bid,sent,failed):
     with conn() as c:c.execute("UPDATE broadcasts SET sent=?,failed=? WHERE id=?",(sent,failed,bid))
-
-
-def save_wizard_session(telegram_id, payload):
-    with conn() as c:
-        c.execute(
-            "INSERT INTO wizard_sessions(telegram_id,payload_json,updated_at) VALUES(?,?,?) "
-            "ON CONFLICT(telegram_id) DO UPDATE SET payload_json=excluded.payload_json,updated_at=excluded.updated_at",
-            (telegram_id, json.dumps(payload, ensure_ascii=False), now()),
-        )
-
-def get_wizard_session(telegram_id):
-    with conn() as c:
-        row=c.execute("SELECT payload_json FROM wizard_sessions WHERE telegram_id=?", (telegram_id,)).fetchone()
-    if not row:
-        return None
-    try:
-        value=json.loads(row[0])
-        return value if isinstance(value, dict) else None
-    except Exception:
-        return None
-
-def clear_wizard_session(telegram_id):
-    with conn() as c:
-        c.execute("DELETE FROM wizard_sessions WHERE telegram_id=?", (telegram_id,))

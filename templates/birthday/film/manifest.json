@@ -1,0 +1,77 @@
+{
+  "name": "Birthday — Film Reel",
+  "description": "Template premium birthday dengan layout film.",
+  "version": "1.0",
+  "fields": [
+    {
+      "id": "title",
+      "label": "Judul",
+      "type": "text",
+      "required": true,
+      "description": "Judul utama website."
+    },
+    {
+      "id": "subtitle",
+      "label": "Subjudul",
+      "type": "text",
+      "required": false,
+      "description": "Kalimat pendek di bawah judul."
+    },
+    {
+      "id": "intro1",
+      "label": "Intro 1",
+      "type": "text",
+      "required": true,
+      "description": "Kalimat pembuka pertama."
+    },
+    {
+      "id": "intro2",
+      "label": "Intro 2",
+      "type": "text",
+      "required": false,
+      "description": "Kalimat pembuka kedua."
+    },
+    {
+      "id": "intro3",
+      "label": "Intro 3",
+      "type": "text",
+      "required": false,
+      "description": "Kalimat pembuka ketiga."
+    },
+    {
+      "id": "intro4",
+      "label": "Intro 4",
+      "type": "text",
+      "required": false,
+      "description": "Kalimat pembuka keempat."
+    },
+    {
+      "id": "gallery",
+      "label": "Foto",
+      "type": "photos",
+      "required": true,
+      "description": "Kirim foto satu per satu, lalu ketik /selesai."
+    },
+    {
+      "id": "chapter",
+      "label": "Cerita / Bab",
+      "type": "text",
+      "required": false,
+      "description": "Teks cerita utama."
+    },
+    {
+      "id": "closing",
+      "label": "Teks Penutup",
+      "type": "text",
+      "required": false,
+      "description": "Kalimat penutup."
+    },
+    {
+      "id": "music",
+      "label": "Musik",
+      "type": "audio",
+      "required": false,
+      "description": "Kirim lagu atau audio untuk website."
+    }
+  ]
+}

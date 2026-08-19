@@ -1,0 +1,56 @@
+{
+  "name": "Kenangan Room 2238",
+  "description": "Template kenangan dengan intro teks, galeri foto, musik, bab tenang, dan ending.",
+  "version": "1.0",
+  "fields": [
+    {
+      "id": "title",
+      "label": "Judul / Nama Kenangan",
+      "type": "text",
+      "required": true,
+      "description": "Masukkan judul yang ingin ditampilkan pada website."
+    },
+    {
+      "id": "introTexts",
+      "label": "Teks Intro",
+      "type": "text",
+      "required": true,
+      "description": "Masukkan teks pembuka. Untuk beberapa teks, tulis satu teks per baris."
+    },
+    {
+      "id": "photos",
+      "label": "Foto Kenangan",
+      "type": "photos",
+      "required": true,
+      "description": "Kirim foto kenangan satu per satu, lalu ketik /selesai jika sudah."
+    },
+    {
+      "id": "quietChapter",
+      "label": "Teks Bab Tenang",
+      "type": "text",
+      "required": false,
+      "description": "Teks yang muncul pada bagian The Quiet Chapter."
+    },
+    {
+      "id": "endingTitle",
+      "label": "Judul Penutup",
+      "type": "text",
+      "required": false,
+      "description": "Teks utama yang muncul pada bagian penutup."
+    },
+    {
+      "id": "endingTexts",
+      "label": "Teks Ucapan Penutup",
+      "type": "text",
+      "required": false,
+      "description": "Masukkan teks ucapan penutup. Untuk beberapa teks, tulis satu teks per baris."
+    },
+    {
+      "id": "music",
+      "label": "Musik",
+      "type": "audio",
+      "required": false,
+      "description": "Kirim file audio atau voice yang ingin digunakan sebagai musik website."
+    }
+  ]
+}

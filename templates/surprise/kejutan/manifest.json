@@ -1,0 +1,38 @@
+{
+  "id": "secret",
+  "name": "Secret Surprise",
+  "category": "surprise",
+  "description": "Kejutan dengan pesan tersembunyi.",
+  "fields": [
+    {
+      "id": "judul",
+      "label": "Judul website",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "nama",
+      "label": "Nama penerima",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "pesan",
+      "label": "Pesan utama",
+      "type": "textarea",
+      "required": true
+    },
+    {
+      "id": "gallery",
+      "label": "Foto",
+      "type": "photos",
+      "required": false
+    },
+    {
+      "id": "music",
+      "label": "Musik",
+      "type": "audio",
+      "required": false
+    }
+  ]
+}

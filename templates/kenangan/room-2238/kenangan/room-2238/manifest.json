@@ -1,1 +1,71 @@
-
+{
+  "id": "room-2238",
+  "name": "ROOM 2238 — Lavender Memory",
+  "category": "kenangan",
+  "description": "Template kenangan bernuansa lavender dengan intro teks, slideshow foto, bab tenang, dan ending pesan. Desain tetap, seluruh konten diisi oleh pengguna.",
+  "fields": [
+    {
+      "id": "judul",
+      "label": "Judul website",
+      "type": "text",
+      "required": true,
+      "description": "Judul utama yang tampil di pembuka, header, dan halaman terakhir."
+    },
+    {
+      "id": "nama",
+      "label": "Nama penerima",
+      "type": "text",
+      "required": true,
+      "description": "Nama orang atau kelompok yang dituju."
+    },
+    {
+      "id": "subjudul",
+      "label": "Subjudul pembuka",
+      "type": "text",
+      "required": true,
+      "description": "Teks kecil di bawah judul pada halaman pembuka."
+    },
+    {
+      "id": "intro_texts",
+      "label": "Teks pembuka / memory text",
+      "type": "textarea",
+      "required": true,
+      "description": "Tulis beberapa teks. Setiap baris menjadi satu tampilan MEMORY / TEXT."
+    },
+    {
+      "id": "quiet_text",
+      "label": "Teks The Quiet Chapter",
+      "type": "textarea",
+      "required": true,
+      "description": "Teks yang muncul pada bagian tenang setelah slideshow foto."
+    },
+    {
+      "id": "ending_main",
+      "label": "Pesan utama ending",
+      "type": "textarea",
+      "required": true,
+      "description": "Tulis 1–2 baris pesan utama di tengah halaman ending."
+    },
+    {
+      "id": "ending_texts",
+      "label": "Teks floating ending",
+      "type": "textarea",
+      "required": true,
+      "description": "Tulis beberapa pesan. Setiap baris menjadi floating text pada ending."
+    },
+    {
+      "id": "gallery",
+      "label": "Foto kenangan",
+      "type": "photos",
+      "required": true,
+      "description": "Kirim foto satu per satu. Jumlah foto bebas. Foto contoh dari template tidak disertakan."
+    },
+    {
+      "id": "music",
+      "label": "Musik background",
+      "type": "audio",
+      "required": false,
+      "description": "Kirim audio/voice jika ingin musik. Bisa dilewati dengan /skip."
+    }
+  ]
+}

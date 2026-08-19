@@ -1,1 +1,0 @@
-function toggleMusic(){const a=document.getElementById("music");if(a.paused)a.play();else a.pause();}

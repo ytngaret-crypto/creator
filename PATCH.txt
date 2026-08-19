@@ -1,0 +1,8 @@
+FIX: wizard state rollback
+
+The previous build restored the SQLite wizard snapshot on every incoming message.
+That overwrote the active aiogram FSM with an older snapshot. This patch changes
+restore_wizard() so SQLite is only used when the FSM state is actually absent.
+
+Replace main.py only and restart/redeploy the bot.
+Do not replace DB, .env, templates, builder.py, or other files.
